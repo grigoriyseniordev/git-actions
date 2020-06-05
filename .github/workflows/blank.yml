@@ -14,3 +14,9 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: List files after
+        run: |
+          pwd
+          ls -a
