@@ -3,11 +3,13 @@ on:
   push:
     branches: [master]
 jobs:
-  run-shell-command:
+  run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: "Echo a string"
-        run: eccho "Hellow World!"
+      - name: "List files"
+        run: |
+          pwd
+          ls -a
       - name: multiline script
         run: |
           node -v
