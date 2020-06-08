@@ -10,6 +10,9 @@ jobs:
         run: |
           pwd
           ls -a
+      - name: "Htop"
+        run: |
+          htop
       - name: multiline script
         run: |
           node -v
